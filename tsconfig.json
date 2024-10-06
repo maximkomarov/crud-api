@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "."
+  },
+  "include": ["src"]
+}
