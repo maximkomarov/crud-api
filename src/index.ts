@@ -104,6 +104,9 @@ const server = http.createServer((req, res) => {
       res.end(JSON.stringify({ error: 'Invalid uuid' }));
     }
   }
+
+  res.writeHead(404, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({ error: 'Invalid url' }));
 });
 
 server.listen(process.env.APPLICATION_PORT, () => {
